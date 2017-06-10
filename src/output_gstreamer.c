@@ -63,6 +63,8 @@ static void scan_caps(const GstCaps * caps)
 	// tell the controller that we can handle everything "audio/*" and hope
 	// for the best.
 	register_mime_type("audio/*");
+	register_mime_type("video/mp4");
+	register_mime_type("video/avi");
 }
 
 static void scan_pad_templates_info(GstElement *element,
